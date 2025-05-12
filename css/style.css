@@ -58,6 +58,7 @@ nav a:hover {
 
 .profile-image img {
     height: 80vh;
+	width : 100vh;
     border-radius: 15px;
     object-fit: cover;
 }
