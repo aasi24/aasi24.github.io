@@ -100,14 +100,14 @@
                     <p>Analyzing business proximity patterns in urban areas.</p>
                 </div>
                 <div class="project-card" onclick="openModal('finance-project3')">
-                    <img src="images/auto.webp" alt="Auto Parts Business Analysis">
-                    <h3>Auto Parts Business Analysis</h3>
-                    <p>Extracting market insights for targeted auto parts promotions.</p>
+                    <img src="images/amz.png" alt="Auto Parts Business Analysis">
+                    <h3>MarketSync Hub</h3>
+                    <p>Multi-Channel Inventory and Marketplace Management System.</p>
                 </div>
 				<div class="project-card" onclick="openModal('finance-project4')">
                     <img src="images/autobusiness.png" alt="Auto Parts Management System">
                     <h3>Auto Parts Management System</h3>
-                    <p>Auto parts management with interactive analytics..</p>
+                    <p>Auto parts management with interactive analytics.</p>
                 </div>
             </div>
         </div>
@@ -775,47 +775,65 @@
 			<div class="modal-content">
 				<span class="close" onclick="closeModal('finance-project3')">&times;</span>
 
-				<h2>Project Title: Auto Parts Business Analysis</h2>
-				<p><strong>Company:</strong> VAP Auto Parts</p>
+				<h2>Project Title: Multi-Channel Inventory and Marketplace Management System</h2>
+				<p><strong>Company:</strong> ORCA Gear IT Solutions</p>
 
 				<h3>Scope of the Project:</h3>
-				<p>To analyze and gather valuable insights from businesses in Surrey related to the auto parts industry. The project involved web scraping and data extraction from various business websites to collect information that could be leveraged for targeted promotions and advertisements. The goal was to use this data to enhance marketing strategies for VAP Auto Parts, ensuring effective outreach and engagement with potential customers.</p>
+				<p>This project focused on building a centralized multi-channel inventory and marketplace management system to integrate auto parts operations with major e-commerce platforms including Amazon, Walmart Seller, and eBay Seller. The main objective was to automate product listing management, live inventory synchronization, dynamic pricing, and order-related data processing across multiple sales channels. The system was designed to support real-time operational control by connecting marketplace APIs with internal inventory data, supplier feeds, and business logic for pricing and stock management.</p>
 
 				<h3>Key Responsibilities:</h3>
 				<ul>
-					<li>Conducted web scraping to collect data on businesses in Surrey that are relevant to the auto parts industry.</li>
-					<li>Extracted valuable information from business websites, including service offerings, customer reviews, business hours, and contact details.</li>
-					<li>Analyzed the collected data to identify key trends and patterns in the auto parts market in Surrey.</li>
-					<li>Utilized insights from the analysis to develop targeted promotional strategies and advertising campaigns for VAP Auto Parts.</li>
-					<li>Created a structured database of the gathered information for future marketing efforts and customer outreach programs.</li>
-					<li>Provided actionable recommendations to the marketing team for enhancing VAP Auto Parts' advertising effectiveness based on competitor analysis and market insights.</li>
+					<li><strong>Marketplace API Integration:</strong> Integrated Amazon SP-API, Walmart Seller API, and eBay Seller APIs to manage listings, inventory, pricing, and marketplace data in a centralized system.</li>
+					<li><strong>Live Inventory Synchronization:</strong> Developed workflows to continuously sync inventory quantities across internal databases and external marketplaces to maintain accurate stock availability.</li>
+					<li><strong>Dynamic Pricing Automation:</strong> Implemented pricing logic based on buy box trends, marketplace competition, supplier cost, and business rules to keep listings competitive and profitable.</li>
+					<li><strong>Listing Management:</strong> Built processes to create, update, and maintain product listings across multiple sales channels with improved consistency and automation.</li>
+					<li><strong>Supplier and Internal Data Integration:</strong> Connected supplier data, OCR-processed documents, and internal inventory systems to support accurate catalog and inventory updates.</li>
+					<li><strong>Data Engineering and Processing:</strong> Designed data workflows for transforming, validating, and distributing marketplace and inventory data across systems.</li>
+					<li><strong>Monitoring and Reporting:</strong> Developed reporting and dashboard features for tracking inventory health, listing status, pricing changes, and marketplace performance.</li>
 				</ul>
 
 				<h3>Technologies and Tools Used:</h3>
 				<ul>
-					<li><strong>Web Scraping Tools:</strong> BeautifulSoup, Selenium for automated data extraction from business websites.</li>
-					<li><strong>Data Analysis Tools:</strong> Python, pandas, and NumPy for processing and analyzing the scraped data.</li>
-					<li><strong>Data Storage:</strong> CSV and SQL databases for storing and managing the extracted information.</li>
-					<li><strong>Visualization Tools:</strong> Matplotlib, Seaborn for visualizing market trends and insights.</li>
-					<li><strong>Data Cleaning and Preprocessing:</strong> Regular expressions and custom parsers to clean and normalize data for analysis.</li>
+					<li><strong>Frontend:</strong> HTML, CSS, Bootstrap, and JavaScript for dashboards, operational views, and reporting interfaces.</li>
+					<li><strong>Backend:</strong> Django and Python for API integration, workflow automation, and business logic implementation.</li>
+					<li><strong>Marketplace Integrations:</strong> Amazon SP-API, Walmart Seller API, and eBay Seller API for inventory, listing, and pricing synchronization.</li>
+					<li><strong>Database:</strong> MS SQL Database for storing product, inventory, supplier, and marketplace-related data.</li>
+					<li><strong>Cache:</strong> Redis for caching frequently accessed operational data and improving performance.</li>
+					<li><strong>Data Processing:</strong> Python-based ETL and transformation workflows for marketplace and internal business data.</li>
+					<li><strong>OCR Integration:</strong> OCR-based processing for supplier invoices and supporting documents used in inventory and pricing workflows.</li>
+					<li><strong>Data Visualization:</strong> Plotly for operational charts, inventory analytics, and performance dashboards.</li>
 				</ul>
 
 				<h3>Timeline:</h3>
-				<p>The project was completed in Q3 2023, with phases spanning data scraping, analysis, and report generation over a period of three months.</p>
+				<p>The project was carried out from <strong>April 2025 to July 2025</strong>, covering planning, API integration, data pipeline development, business rule implementation, testing, and operational deployment.</p>
 
 				<h3>Solution Design and Implementation:</h3>
 				<ul>
-					<li><strong>Data Collection:</strong> Scraped data from various business websites in Surrey, focusing on those related to the auto parts industry. Extracted key information such as product offerings, customer reviews, business hours, and contact information.</li>
-					<li><strong>Data Cleaning and Analysis:</strong> Cleaned and processed the scraped data to remove duplicates, normalize formats, and extract relevant insights. Analyzed data to identify market trends, customer preferences, and service gaps in the auto parts industry within Surrey.</li>
-					<li><strong>Market Analysis and Strategy Development:</strong> Conducted a competitor analysis to understand the strengths and weaknesses of other auto parts businesses in Surrey. Used insights to develop targeted advertising campaigns aimed at promoting VAP Auto Parts’ offerings.</li>
-					<li><strong>Reporting and Recommendations:</strong> Compiled findings into actionable insights for the marketing team. Provided recommendations on promotional strategies, including targeted advertisements, special offers, and customer engagement initiatives.</li>
+					<li><strong>Amazon Inventory Management:</strong> Developed integration with Amazon SP-API to manage listing data, synchronize stock levels, monitor product status, and support automated pricing updates based on buy box conditions and marketplace competition.</li>
+					<li><strong>Walmart Seller Integration:</strong> Implemented Walmart Seller API workflows to handle item synchronization, listing updates, and marketplace inventory control for Walmart sales operations.</li>
+					<li><strong>eBay Seller Integration:</strong> Built eBay Seller API connections to support listing automation, quantity updates, pricing synchronization, and cross-channel product management.</li>
+					<li><strong>Live Inventory Updates:</strong> Designed a centralized inventory workflow where stock changes from internal systems and supplier updates could be reflected across all connected marketplaces in near real time.</li>
+					<li><strong>Buy Box-Based Pricing Logic:</strong> Implemented automated pricing logic using buy box data, cost considerations, and business rules to maintain competitive listing prices while protecting margins.</li>
+					<li><strong>Centralized Product and Listing Control:</strong> Created a unified operational layer to manage product records, SKU mapping, marketplace identifiers, and listing health across Amazon, Walmart, and eBay.</li>
+					<li><strong>Supplier and OCR Data Processing:</strong> Integrated supplier information, invoices, and OCR-extracted records into the system to improve catalog completeness, inventory availability, and pricing accuracy.</li>
+					<li><strong>Reporting and Monitoring:</strong> Developed dashboards and reports for monitoring listing performance, stock synchronization, pricing changes, supplier activity, and channel-level marketplace operations.</li>
 				</ul>
 
 				<h3>Deployment and Impact:</h3>
 				<ul>
-					<li><strong>Enhanced Market Understanding:</strong> Provided a comprehensive understanding of the auto parts market in Surrey, identifying key areas for strategic advertising.</li>
-					<li><strong>Targeted Marketing Campaigns:</strong> Enabled VAP Auto Parts to launch more effective promotional campaigns based on detailed market and competitor insights.</li>
-					<li><strong>Increased Outreach:</strong> Improved customer outreach and engagement by tailoring advertising strategies to the preferences and needs of the target market.</li>
+					<li><strong>Centralized Marketplace Operations:</strong> Unified inventory, pricing, and listing management across Amazon, Walmart, and eBay into one operational system.</li>
+					<li><strong>Improved Inventory Accuracy:</strong> Reduced stock mismatches by implementing live inventory synchronization across internal and marketplace systems.</li>
+					<li><strong>Better Pricing Control:</strong> Improved marketplace competitiveness through buy box-aware pricing automation and dynamic pricing workflows.</li>
+					<li><strong>Reduced Manual Work:</strong> Minimized manual effort in listing maintenance, stock updates, and cross-channel data handling through API-driven automation.</li>
+					<li><strong>Operational Visibility:</strong> Enabled business users to track marketplace activity, listing health, and pricing movements through centralized dashboards and reporting tools.</li>
+				</ul>
+
+				<h3>Usage:</h3>
+				<ul>
+					<li><strong>Inventory Management:</strong> Users can monitor and manage live inventory across Amazon, Walmart, and eBay from a centralized system.</li>
+					<li><strong>Pricing Control:</strong> The platform supports automated and rule-based pricing updates according to buy box conditions and marketplace competition.</li>
+					<li><strong>Marketplace Operations:</strong> Users can track listing status, synchronization health, and product-level performance across multiple channels.</li>
+					<li><strong>Reporting and Analysis:</strong> Dashboards and reports provide insights into stock levels, supplier data, pricing updates, and marketplace operations.</li>
 				</ul>
 
 			</div>
@@ -827,56 +845,61 @@
 				<span class="close" onclick="closeModal('finance-project4')">&times;</span>
 
 				<h2>Project Title: Auto Parts Management System</h2>
-				<p><strong>Company:</strong> VAP Auto Parts</p>
+				<p><strong>Company:</strong> Orca Gear IT Solutions</p>
 
 				<h3>Scope of the Project:</h3>
-				<p>The VAP_App is a Django-based web application designed to manage and visualize auto parts, sales, and car intake data across multiple locations. The primary objective was to create an interactive platform that provides detailed insights through dashboards, charts, and reports. The application enables store managers and business analysts to efficiently analyze sales trends, inventory status, and car intake, improving decision-making and operational efficiency.</p>
+				<p>This project is a Django-based web application developed to manage, process, and visualize auto parts, sales, supplier, and car intake data across multiple business locations. The primary objective was to build a centralized platform that not only provides operational dashboards, charts, and reports, but also supports supplier data integration through OCR-based document processing. The system helps store managers, analysts, and operational teams efficiently monitor inventory, sales performance, supplier activity, and business trends, leading to improved decision-making and operational efficiency.</p>
 
 				<h3>Key Responsibilities:</h3>
 				<ul>
-					<li><strong>Development and Design:</strong> Built a responsive web application using Django framework, integrating HTML, CSS, Bootstrap, and JavaScript for frontend development.</li>
-					<li><strong>Data Management:</strong> Implemented CSV-based data storage and handling for managing sales, parts, and car intake data across various locations.</li>
-					<li><strong>Interactive Dashboards:</strong> Designed multiple sections including Dashboard, Parts, Cars, and Reports to display real-time data through interactive charts and tables.</li>
-					<li><strong>Feature Implementation:</strong> Developed features like monthly and daily sales tracking, parts inventory visualization, car intake analysis, and report generation with date filters and store selection.</li>
-					<li><strong>Data Visualization:</strong> Integrated Plotly for creating dynamic charts and graphs to visually represent sales data, inventory levels, and car intake statistics.</li>
-					<li><strong>User Interface:</strong> Enhanced user experience with interactive elements like dropdowns, date pickers, and buttons for seamless navigation and report generation.</li>
+					<li><strong>System Development and Design:</strong> Designed and developed a responsive web application using Django, with HTML, CSS, Bootstrap, and JavaScript for a smooth and interactive frontend experience.</li>
+					<li><strong>Data Engineering and Integration:</strong> Built data workflows to manage sales, inventory, supplier, and car intake data from multiple sources, ensuring consistent and structured data availability across the platform.</li>
+					<li><strong>Supplier Integration via OCR:</strong> Integrated supplier documents and invoices using OCR-based processing to extract, standardize, and store supplier-related data for reporting and operational use.</li>
+					<li><strong>Interactive Dashboards:</strong> Developed dashboard modules to display real-time and historical insights for sales, inventory, supplier performance, and car intake through charts and tables.</li>
+					<li><strong>Report Generation:</strong> Implemented detailed reporting features with store-level and date-based filtering for transfer, supplier, cashier, category, sales, inventory, and clerk performance reports.</li>
+					<li><strong>Data Visualization:</strong> Integrated Plotly to create dynamic visualizations for sales trends, inventory levels, supplier analysis, and operational metrics.</li>
+					<li><strong>User Experience Optimization:</strong> Enhanced usability with interactive filters, dropdowns, date pickers, and navigation components to support quick and efficient analysis.</li>
 				</ul>
 
 				<h3>Technologies and Tools Used:</h3>
 				<ul>
-					<li><strong>Frontend:</strong> HTML, CSS, Bootstrap, JavaScript for responsive design and user interaction.</li>
-					<li><strong>Backend:</strong> Django framework for backend development and server-side logic.</li>
-					<li><strong>Data Handling:</strong> MS Database for data storage, manipulation, and analysis.</li>
-					<li><strong>Cache:</strong> Redis for storing cache data.</li>
-					<li><strong>Data Visualization:</strong> Plotly for creating interactive charts and graphs.</li>
-					<li><strong>Styling and Design:</strong> Bootstrap for styling and ensuring a consistent look and feel across the application.</li>
+					<li><strong>Frontend:</strong> HTML, CSS, Bootstrap, and JavaScript for responsive design and user interaction.</li>
+					<li><strong>Backend:</strong> Django framework for application logic, backend processing, and system integration.</li>
+					<li><strong>Database:</strong> MS SQL Database for structured data storage, querying, and management.</li>
+					<li><strong>Cache:</strong> Redis for caching and improving application performance.</li>
+					<li><strong>OCR Integration:</strong> OCR-based document processing for extracting supplier and invoice data from files and scanned documents.</li>
+					<li><strong>Data Visualization:</strong> Plotly for interactive charts and visual reporting.</li>
+					<li><strong>Styling and Design:</strong> Bootstrap for consistent and user-friendly interface design.</li>
 				</ul>
 
 				<h3>Timeline:</h3>
-				<p>The project was developed over several months in 2023, with key phases including design, development, testing, and deployment.</p>
+				<p>The project was developed over several months in 2025, covering planning, system design, development, testing, supplier integration, and deployment.</p>
 
 				<h3>Solution Design and Implementation:</h3>
 				<ul>
-					<li><strong>Dashboard:</strong> Implemented features to display monthly and daily sales data across various locations such as Vancouver, Surrey, Port Moody, Burnaby, and Richmond. Designed interactive charts to show sales trends, average sales, and category-wise sales. Created a recent sales table to provide a quick overview of recent transactions with details like date, invoice, customer, amount, and payment type.</li>
-					<li><strong>Parts Management:</strong> Developed modules to display part sales data, including monthly, weekly, and daily figures. Integrated location-specific sales data, allowing users to filter and view sales by store. Incorporated charts to visualize parts sales data and tables to list recent parts transactions.</li>
-					<li><strong>Car Intake:</strong> Created sections to track car intake data on a monthly, weekly, and daily basis across different locations. Implemented an interactive dashboard to allow detailed analysis of car intake patterns.</li>
-					<li><strong>Report Generation:</strong> Added functionality to generate various reports such as Transfer, Supplier, Cashier, Category, Sales, Inventory, and Clerk Performance. Implemented dropdowns for store selection and date pickers for generating time-specific reports. Enabled the analysis of selected reports, providing detailed results for informed decision-making.</li>
-					<li><strong>User Interaction and Navigation:</strong> Designed a user-friendly interface with consistent navigation to switch seamlessly between different sections of the application. Integrated interactive elements like dropdowns and date pickers to enhance user experience and facilitate in-depth data analysis.</li>
+					<li><strong>Dashboard:</strong> Built dashboard components to display monthly and daily sales data across multiple locations including Vancouver, Surrey, Port Moody, Burnaby, and Richmond. Created interactive charts for sales trends, average sales, and category-level performance, along with recent sales tables for quick operational visibility.</li>
+					<li><strong>Parts Management:</strong> Developed modules to manage and analyze parts sales data with monthly, weekly, and daily insights. Enabled location-based filtering and integrated data views to support store-level operational analysis.</li>
+					<li><strong>Car Intake Monitoring:</strong> Created dashboards and reporting views to track car intake activity on monthly, weekly, and daily levels across different branches, enabling detailed operational tracking.</li>
+					<li><strong>Supplier Data Processing:</strong> Integrated OCR-driven workflows to process supplier invoices and related documents, extract relevant details, and make supplier data available within the reporting and analytics environment.</li>
+					<li><strong>Report Generation:</strong> Implemented advanced reporting capabilities for supplier, transfer, cashier, category, inventory, sales, and clerk performance analysis, with date pickers and location-based filters for targeted reporting.</li>
+					<li><strong>User Interaction and Navigation:</strong> Designed a clear and consistent navigation structure that allows users to move between Dashboard, Parts, Cars, Suppliers, and Reports sections efficiently while using filters and controls for deeper analysis.</li>
 				</ul>
 
 				<h3>Deployment and Impact:</h3>
 				<ul>
-					<li><strong>Enhanced Data Management:</strong> Centralized data management for sales, parts inventory, and car intake, providing comprehensive insights into business operations.</li>
-					<li><strong>Informed Decision-Making:</strong> The application enabled store managers to make data-driven decisions through visual dashboards and detailed reports.</li>
-					<li><strong>Operational Efficiency:</strong> Streamlined the analysis process for sales, inventory, and car intake, saving time and improving the accuracy of business insights.</li>
-					<li><strong>Improved User Experience:</strong> The intuitive interface and interactive features made it easier for users to navigate and analyze data, enhancing overall usability.</li>
+					<li><strong>Centralized Data Operations:</strong> Unified sales, parts, supplier, and car intake data into a single operational platform for improved visibility and control.</li>
+					<li><strong>Improved Supplier Data Handling:</strong> Reduced manual effort by integrating OCR-based supplier document processing, making supplier information easier to capture and analyze.</li>
+					<li><strong>Better Decision-Making:</strong> Enabled managers and analysts to make data-driven decisions through dashboards, visual reports, and detailed operational insights.</li>
+					<li><strong>Operational Efficiency:</strong> Streamlined reporting and analysis workflows, reducing manual work and improving the speed and accuracy of business insights.</li>
+					<li><strong>Enhanced User Experience:</strong> Provided a user-friendly interface with interactive reporting and navigation features that improved usability across teams.</li>
 				</ul>
 
 				<h3>Usage:</h3>
 				<ul>
-					<li><strong>Interactive Interface:</strong> Users can interact with the application using dropdowns, date pickers, and buttons to filter and generate reports.</li>
-					<li><strong>Data Analysis:</strong> The app provides tools for analyzing sales, parts, and car data visually through graphs and detailed tables.</li>
-					<li><strong>Navigation:</strong> A consistent navigation bar allows users to switch between sections like Dashboard, Parts, Cars, and Reports seamlessly.</li>
+					<li><strong>Interactive Interface:</strong> Users can work with dropdowns, date pickers, and buttons to filter data and generate targeted reports.</li>
+					<li><strong>Operational Analysis:</strong> The application supports analysis of sales, parts inventory, supplier records, and car intake through visual charts and detailed tables.</li>
+					<li><strong>Supplier Processing:</strong> OCR-integrated workflows allow supplier documents and invoices to be processed and included in the system for further analysis and reporting.</li>
+					<li><strong>Navigation:</strong> A structured navigation system allows seamless switching between dashboards, operational modules, and reports.</li>
 				</ul>
 
 			</div>
@@ -889,7 +912,7 @@
 				<span class="close" onclick="closeModal('soft-project1')">&times;</span>
 
 				<h2>Project Title: The Technician App - Automotive Maintenance Management System</h2>
-				<p><strong>Company:</strong> VAP Auto Parts</p>
+				<p><strong>Company:</strong> ORCA Gear IT Solutions</p>
 
 				<h3>Scope of the Project:</h3>
 				<p>To streamline automotive maintenance workflows for technicians by providing a comprehensive Django-based system. The application includes features such as user authentication, OCR for extracting data from insurance papers, work order management, and real-time notifications. It aims to enhance efficiency in managing work orders, improve data accuracy, and facilitate effective communication between technicians, staff, and customers.</p>
@@ -913,7 +936,7 @@
 				</ul>
 
 				<h3>Timeline:</h3>
-				<p>Developed and completed in 2023 over a period of six months.</p>
+				<p>Developed and completed in 2025 over a period of three months.</p>
 
 				<h3>Solution Design and Implementation:</h3>
 				<ul>
@@ -1043,7 +1066,7 @@
 				<span class="close" onclick="closeModal('soft-project2')">&times;</span>
 
 				<h2>Project Title: Driver App - Task Management and Communication System</h2>
-				<p><strong>Company:</strong> VAP Auto Parts</p>
+				<p><strong>Company:</strong> ORCA Gear IT Solutions</p>
 
 				<h3>Scope of the Project:</h3>
 				<p>The Driver App is a comprehensive web application designed to streamline task management, communication, and workflow for drivers and administrators. It offers features like task assignment, real-time notifications, messaging, and priority management within an intuitive and user-friendly interface. The app aims to enhance operational efficiency, improve communication, and provide a centralized platform for task management, particularly for businesses in delivery services, logistics, and field services.</p>
@@ -1068,7 +1091,7 @@
 				</ul>
 
 				<h3>Timeline:</h3>
-				<p>The project was developed over six months, including design, development, testing, and deployment phases in 2023.</p>
+				<p>The project was developed over two months, including design, development, testing, and deployment phases in 2025.</p>
 
 				<h3>Solution Design and Implementation:</h3>
 				<ul>
@@ -1150,7 +1173,7 @@
 				<span class="close" onclick="closeModal('soft-project3')">&times;</span>
 
 				<h2>Project Title: Barcode App - Inventory Management and Barcode Generation</h2>
-				<p><strong>Company:</strong> VAP Auto Parts</p>
+				<p><strong>Company:</strong> ORCA Gear IT Solutions</p>
 
 				<h3>Scope of the Project:</h3>
 				<p>The Barcode App is a Django-based web application designed to generate, manage, and print barcodes for inventory items. It provides an all-in-one solution for businesses that require efficient inventory tracking and labeling, integrating features such as barcode generation, inventory filtering, and printing capabilities. This app is particularly useful for retail businesses, warehouses, and operations that rely on precise inventory control.</p>
@@ -1175,7 +1198,7 @@
 				</ul>
 
 				<h3>Timeline:</h3>
-				<p>The project was developed over a period of four months in 2023, including phases for requirements gathering, development, testing, and deployment.</p>
+				<p>The project was developed over a period of one month in 2025, including phases for requirements gathering, development, testing, and deployment.</p>
 
 				<h3>Solution Design and Implementation:</h3>
 				<ul>
@@ -1199,7 +1222,7 @@
 	
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Ahmad Ahsan Saleem. All Rights Reserved.</p>
+        <p>&copy; 2025 Ahmad Ahsan Saleem. All Rights Reserved.</p>
     </footer>
 	
 	<script src="js/script.js"></script>
